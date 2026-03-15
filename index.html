@@ -5,54 +5,115 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>H&J Immigration and Tax Service</title>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 <style>
 
 body{
 font-family: Arial, sans-serif;
-background:#202d5d;
-color:white;
-text-align:center;
+margin:0;
 padding:30px;
+text-align:center;
+
+/* USA Flag Background */
+
+background:
+linear-gradient(
+to bottom,
+#B22234 0%, #B22234 7.7%,
+#ffffff 7.7%, #ffffff 15.4%,
+#B22234 15.4%, #B22234 23.1%,
+#ffffff 23.1%, #ffffff 30.8%,
+#B22234 30.8%, #B22234 38.5%,
+#ffffff 38.5%, #ffffff 46.2%,
+#B22234 46.2%, #B22234 53.9%,
+#ffffff 53.9%, #ffffff 61.6%,
+#B22234 61.6%, #B22234 69.3%,
+#ffffff 69.3%, #ffffff 77%,
+#B22234 77%, #B22234 84.7%,
+#ffffff 84.7%, #ffffff 92.4%,
+#B22234 92.4%, #B22234 100%
+);
+
 }
+
+/* blue corner accents */
+
+body::before{
+content:"";
+position:fixed;
+top:0;
+left:0;
+width:140px;
+height:140px;
+background:#0b3d91;
+clip-path:polygon(0 0,100% 0,0 100%);
+}
+
+body::after{
+content:"";
+position:fixed;
+bottom:0;
+right:0;
+width:140px;
+height:140px;
+background:#0b3d91;
+clip-path:polygon(100% 100%,0 100%,100% 0);
+}
+
+/* main container */
 
 .container{
 max-width:420px;
 margin:auto;
-background:#2f3f7a;
+background-image:url("https://raw.githubusercontent.com/clientsfile/files/main/bg%20business%20card.png");
+background-size:cover;
+background-position:center;
 padding:25px;
-border-radius:12px;
+border-radius:14px;
+box-shadow:0 10px 35px rgba(0,0,0,0.2);
 }
+
+/* title */
 
 h2{
 margin-bottom:20px;
+color:#0b3d91;
 }
 
-a{
-display:block;
-background:white;
+/* buttons */
+
+.btn{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+background:#0b3d91;
 padding:14px;
 margin:12px 0;
 text-decoration:none;
-color:#202d5d;
+color:white;
 border-radius:8px;
 font-size:16px;
-font-weight:600;
+font-weight:bold;
+transition:0.3s;
 }
 
-a:hover{
-background:#f2f2f2;
+.btn:hover{
+background:#062b66;
 }
+
+/* icons */
+
+.icon{
+width:20px;
+height:20px;
+}
+
+/* video */
 
 video{
 width:100%;
 border-radius:10px;
 margin-bottom:15px;
-}
-
-.icon{
-margin-right:8px;
 }
 
 </style>
@@ -68,16 +129,19 @@ margin-right:8px;
 <source src="https://raw.githubusercontent.com/clientsfile/files/main/H%26J%20IMMIGRATION%20AND%20TAX%20SERVICE%20.mp4" type="video/mp4">
 </video>
 
-<a href="tel:+19182704215">
-<i class="fa-solid fa-phone icon"></i> Call Office
+<a class="btn" href="tel:+19182704215">
+<img class="icon" src="https://cdn-icons-png.flaticon.com/512/724/724664.png">
+Call Office
 </a>
 
-<a href="https://wa.link/pdu381">
-<i class="fa-brands fa-whatsapp icon"></i> WhatsApp Message
+<a class="btn" href="https://wa.link/pdu381">
+<img class="icon" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg">
+WhatsApp
 </a>
 
-<a href="https://maps.google.com/?q=8114+E+21ST+TULSA+OK+74129">
-<i class="fa-solid fa-location-dot icon"></i> Office Address
+<a class="btn" href="https://maps.google.com/?q=8114+E+21ST+TULSA+OK+74129">
+<img class="icon" src="https://cdn-icons-png.flaticon.com/512/684/684908.png">
+Office Address
 </a>
 
 </div>
