@@ -12,51 +12,23 @@ font-family: Arial, sans-serif;
 margin:0;
 padding:30px;
 text-align:center;
-
-/* USA Flag Background */
-
-background:
-linear-gradient(
-to bottom,
-#B22234 0%, #B22234 7.7%,
-#ffffff 7.7%, #ffffff 15.4%,
-#B22234 15.4%, #B22234 23.1%,
-#ffffff 23.1%, #ffffff 30.8%,
-#B22234 30.8%, #B22234 38.5%,
-#ffffff 38.5%, #ffffff 46.2%,
-#B22234 46.2%, #B22234 53.9%,
-#ffffff 53.9%, #ffffff 61.6%,
-#B22234 61.6%, #B22234 69.3%,
-#ffffff 69.3%, #ffffff 77%,
-#B22234 77%, #B22234 84.7%,
-#ffffff 84.7%, #ffffff 92.4%,
-#B22234 92.4%, #B22234 100%
-);
-
+background-image:url("https://raw.githubusercontent.com/clientsfile/files/main/desktop%20v.png");
+background-size:cover;
+background-position:center;
+background-repeat:no-repeat;
+min-height:100vh;
 }
 
-/* blue corner accents */
+/* mobile background */
 
-body::before{
-content:"";
-position:fixed;
-top:0;
-left:0;
-width:140px;
-height:140px;
-background:#0b3d91;
-clip-path:polygon(0 0,100% 0,0 100%);
+@media (max-width:768px){
+
+body{
+background-image:url("https://raw.githubusercontent.com/clientsfile/files/main/mobile%20v.png");
+background-size:cover;
+background-position:center;
 }
 
-body::after{
-content:"";
-position:fixed;
-bottom:0;
-right:0;
-width:140px;
-height:140px;
-background:#0b3d91;
-clip-path:polygon(100% 100%,0 100%,100% 0);
 }
 
 /* main container */
